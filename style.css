@@ -144,7 +144,12 @@ body {
     transition: transform 0.7s ease, height 0.7s ease;
     padding: 30px 40px;
     box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+}
+
+.letter::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Edge */
 }
 
 .letter-content {
